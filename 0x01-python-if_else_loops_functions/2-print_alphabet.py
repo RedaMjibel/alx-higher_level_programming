@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 for chars in 'abcdefghijklmnopqrstuvwxyz':
-    print(format(chars), end="")
+    print("{}".format(chars), end="")
