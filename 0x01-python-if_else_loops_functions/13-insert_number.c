@@ -6,6 +6,8 @@
  * insert_node - inserts a node into a sorted singly linked list
  * @head: the head of the singly linked list
  * @number: the number to be inserted
+ *
+ * Return: the adress of the new node or NULL on faliure
  */
 
 listint_t *insert_node(listint_t **head, int number)
