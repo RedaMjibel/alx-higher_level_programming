@@ -13,7 +13,6 @@ int is_palindrome(listint_t **head)
 	struct listint_s *slow = *head;
 	struct listint_s *current = *head;
 	struct listint_s *fast = *head;
-	struct listint_s *middle = NULL;
 	struct listint_s *temp = NULL;
 	struct listint_s *previous = NULL;
 	struct listint_s *rev = NULL;
@@ -28,9 +27,7 @@ int is_palindrome(listint_t **head)
 	}
 	if (fast != NULL)
 	{
-		middle = slow;
 		slow = slow->next;
-		middle = middle->next;
 	}
 	previous->next = NULL;
 	while (slow != NULL)
