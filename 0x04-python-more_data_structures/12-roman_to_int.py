@@ -4,6 +4,8 @@ def roman_to_int(roman_string):
             'D': 500, 'M':1000 }
     total = 0
     prev = 0
+    if roman_string == None:
+        return 0
 
     for num in reversed(roman_string):
         integer = roman_numerals[num]
