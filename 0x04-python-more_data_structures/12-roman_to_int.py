@@ -9,6 +9,7 @@ def roman_to_int(roman_string):
         integer = roman_numerals[num]
         if integer <= prev:
             total = total - integer
+            prev = integer
         elif integer >= prev:
             total = total + integer
 
