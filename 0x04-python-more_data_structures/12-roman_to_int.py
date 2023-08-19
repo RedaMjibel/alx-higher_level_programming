@@ -4,7 +4,7 @@ def roman_to_int(roman_string):
             'D': 500, 'M':1000 }
     total = 0
     prev = 0
-    if roman_string == None:
+    if roman_string == None or not isinstance(roman_string, str):
         return 0
 
     for num in reversed(roman_string):
