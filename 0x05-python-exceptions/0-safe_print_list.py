@@ -8,6 +8,6 @@ def safe_print_list(my_list=[], x=0):
             if x > 0 and i >= x:
                 break
         except Exception as ex:
-            print(f"Error: {ex}")
+            return i
     print(" ")
     return i
