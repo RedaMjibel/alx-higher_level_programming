@@ -36,7 +36,7 @@ Test two integers:
 Test two big integers:
 
     >>> add_integer(999999998, 999999999)
-    199999997
+    1999999997
 
 Test two floats:
 
