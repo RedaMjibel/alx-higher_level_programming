@@ -62,3 +62,11 @@ Test a float and an integer:
 
     >>> add_integer(234234.43545, 4352345)
     4586579
+
+Test first arg invalid:
+
+    >>> add_integer("foo", 0)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
