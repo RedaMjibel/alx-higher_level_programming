@@ -1,5 +1,5 @@
-The ``1-my_list`` module
-=======================
+A module for ``1-my_list``
+-----------------------
 
 Using ``1-mylist``
 -----------------------
@@ -42,11 +42,39 @@ print_sorted method called via class with no args:
 
 
 Normal list test:
-    >>> ml = MyList([2, 10, 1])
+    >>> ml = MyList([3, 8, 1])
     >>> ml.print_sorted()
-    [1, 2, 10]
+    [1, 3, 8]
 
 print_sorted method called with 2 args:
     >>> ml.print_sorted([4, 2, 5], 1)
     Traceback (most recent call last):
     TypeError: print_sorted() takes 1 positional argument but 3 were given
+
+Normal list test 2:
+    >>> ml = MyList([1, 5, 4, 3, 2])
+    >>> ml.print_sorted()
+    [1, 2, 3, 4, 5]
+
+Negative ints list test:
+    >>> ml = MyList([-1000, -90, -432562, 0, -53423437, -123])
+    >>> ml.print_sorted()
+    [-53423437, -432562, -1000, -123, -98, 0]
+
+Original list unchanged:
+    >>> ml = MyList([2, 10, 1, -10, 20, 100, 0])
+    >>> ml.print_sorted()
+    [-10, 0, 1, 2, 10, 20, 100]
+    >>> ml
+    [2, 10, 1, -10, 20, 100, 0]
+
+List already in order:
+    >>> ml = MyList([-10, 0, 1, 2, 10, 20, 100])
+    >>> ml.print_sorted()
+    [-10, 0, 1, 2, 10, 20, 100]
+
+Test append:
+    >>> ml = MyList()
+    >>> ml.append(10)
+    >>> ml
+    [10]
