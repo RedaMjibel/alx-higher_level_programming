@@ -1,0 +1,23 @@
+The ``7-base_geometry`` module
+===============================
+
+Using ``BaseGeometry``
+-------------------------------
+
+Import function from module:
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Correct Class Type test:
+	>>> bg == BaseGeometry()
+	>>> type(bg) == BaseGeometry
+	True
+
+
+area() instance method
+----------------------
+area method is an instance method:
+	>>>	type(BaseGeometry.__dict__['area'])
+	<class 'function'>
+
+area method called via class with no args:
+	>>> bg.__class__.area()
