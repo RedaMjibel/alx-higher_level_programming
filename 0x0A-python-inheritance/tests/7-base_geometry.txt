@@ -21,3 +21,24 @@ area method is an instance method:
 
 area method called via class with no args:
 	>>> bg.__class__.area()
+
+area method normal test:
+    >>> bg.area()
+    Traceback (most recent call last):
+    Exception: area() is not implemented
+
+integer_validator() instance method
+-----------------------------------
+integer_validator is an instance method:
+	>>> type(BaseGeometry.__dict__['integer_validator'])
+	<class 'function'>
+
+integer_validator method arg test (0 args):
+	>>> bg.integer_validator()
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 2 required positional arguments: 'name' and value
+
+integer_validator method float.0 value:
+	>>> bg.integer_validator("test", 2.0)
+	Traceback (most recent call last):
+	TypeError: test must be an integer
