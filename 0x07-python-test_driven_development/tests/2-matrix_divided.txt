@@ -66,3 +66,27 @@ Test empty matrix more:
     Traceback (most recent call last):
     ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test division by non num:
+    >>> matrix_divided([[2]], "hello")
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
+
+Test missing 1 arg:
+    >>> matrix_divided()
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+Test 1st arg str:
+    >>> matrix_divided("world", 1)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test 1st arg empty list:
+    >>> matrix_divided([], 1)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
