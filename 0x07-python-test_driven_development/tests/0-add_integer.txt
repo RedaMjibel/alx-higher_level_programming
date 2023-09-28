@@ -70,3 +70,18 @@ Test first arg invalid:
         ...
     TypeError: a must be an integer
 
+Test second arg invalid:
+
+    >>> add_integer(123456, [])
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+
+Test both args invalid:
+
+    >>> add_integer(None, None)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
