@@ -104,3 +104,8 @@ Add infinity:
     Traceback (most recent call last):
     ...
     OverflowError: cannot convert float infinity to integer
+
+Test two negative floats:
+
+    >>> add_integer(-5.5, -3.5)
+    -8
