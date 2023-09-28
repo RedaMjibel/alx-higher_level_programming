@@ -97,3 +97,10 @@ Test float overflow
     Traceback (most recent call last):
         ...
     OverflowError: cannot convert float infinity to integer
+
+Add infinity:
+
+    >>> add_integer(float('inf'), float('-inf'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
