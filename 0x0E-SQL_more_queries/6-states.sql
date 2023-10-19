@@ -1,4 +1,4 @@
--- 5-unique_id.sql
+-- 6-states.sql
 -- creates the table id_not_null
 
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
