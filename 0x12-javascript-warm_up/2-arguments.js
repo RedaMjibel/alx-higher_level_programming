@@ -5,6 +5,8 @@ const numArgs = args.length;
 
 if (numArgs <= 2) {
   console.log('No argument');
-} else {
+} else if (numArgs === 3) {
   console.log('Argument found');
+} else {
+  console.log('Arguments found');
 }
