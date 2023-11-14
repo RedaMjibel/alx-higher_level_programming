@@ -7,6 +7,6 @@ if (isNaN(check) || check === undefined) {
 } else {
   const x = Number(process.argv[2]);
   for (let i = 0; i < x; i++) {
-	console.log('X'.repeat(x));
+    console.log('X'.repeat(x));
   }
 }
