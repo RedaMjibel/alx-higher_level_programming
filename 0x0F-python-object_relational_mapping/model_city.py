@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-contains the class definition of a city 
+contains the class definition of a city
 
 """
 from sqlalchemy import create_engine, ForeignKey, Column, String, Integer, CHAR
