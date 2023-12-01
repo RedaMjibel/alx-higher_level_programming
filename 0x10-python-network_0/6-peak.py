@@ -1,15 +1,22 @@
 #!/usr/bin/python3
-# Finds a peak in a list of unsorted integers
+
 
 def find_peak(list_of_integers):
-    result = []
-    for i in range(1, len(list_of_integers) - 1):
-        if list_of_integers[i - 1] <= list_of_integers[i] >= list_of_integers[i + 1]:
-            peak = list_of_integers[i]
-            result.append(peak)
-    if len(result) == 1:
-        return peak
-    elif len(result) == 0:
+    """Find the peak"""
+    list_l = len(list_of_integers)
+    if list_l is 0:
         return None
+    peak = binary_search(list_of_integers, 0, list_l - 1)
+    return list_of_integers[peak]
+
+
+
+def binary_search(a, lo, hi):
+    """Using recursion to look for the peak"""
+    if lo >= hi:
+        return lo
+    mid = ((hi - lo) // 2) + lo
+    if a[mid] > a[mid + 1]:
+        return binary_search(a, lo, mid)
     else:
-        return result
+        return binary_search(a, mid + 1, hi)
