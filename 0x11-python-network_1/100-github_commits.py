@@ -2,7 +2,7 @@
 """ fetches 10 commits from a repository """
 
 import requests
-import sys
+from sys import argv
 
 if __name__ == "__main__":
     response = requests.get('https://api.github.com/repos/{}/{}/commits'
@@ -14,4 +14,4 @@ if __name__ == "__main__":
         print(commit.get('commit').get('author').get('name'))
         i = i + 1
         if i == 10:
-        break
+            break
