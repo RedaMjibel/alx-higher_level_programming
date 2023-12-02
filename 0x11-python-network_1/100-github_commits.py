@@ -6,7 +6,7 @@ import sys
 if __name__ == "__main__":
     i = 0
     response = requests.get('https://api.github.com/repos/{}/{}/commits'
-                     .format(sys.argv[2], sys.argv[1]))
+                            .format(sys.argv[2], sys.argv[1]))
     for commit in sorted(response.json(), key=lambda c: c.get('commit')
                          .get('author').get('date'), reverse=True):
         print(commit.get('sha') + ": ", end="")
