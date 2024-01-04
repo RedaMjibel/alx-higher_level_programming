@@ -16,7 +16,7 @@ request(url, (error, response, body) => {
           completed[task.userId]++;
         }
       }
-  });
+    });
     console.log(completed);
   } else {
     console.log(response.statusCode);
