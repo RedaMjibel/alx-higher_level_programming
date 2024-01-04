@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const fs = require('node:fs');
+const fs = require('fs');
 const path = process.argv[2];
 const string = process.argv[3];
 
